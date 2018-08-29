@@ -1,0 +1,28 @@
+/*******HEADER*******/
+
+#mainContent {
+	position: relative;
+	margin: 80px 15px 50px;
+	min-height: 50%;
+
+}
+.nav-item {
+	color:#111111;
+}
+
+html,
+body {
+    height: 100%;
+	color:#111111;
+}
+
+/*******FOOTER*******/
+footer {
+	position: relative;
+	min-height: 80px;
+    height: 60px;
+    background-color: #f0f5fe;
+/*	bottom: 0;
+	margin-bottom: 0;*/
+
+}
