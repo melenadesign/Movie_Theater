@@ -5,15 +5,17 @@ import java.io.IOException;
 
 
 public class EncodingFilter implements Filter {
+    public final String ENCODING = "UTF-8";
+    public final String CONTENTTYPE = "text/html";
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
     }
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain chain) throws IOException, ServletException {
-        servletResponse.setContentType("text/html");
-        servletResponse.setCharacterEncoding("UTF-8");
-        servletRequest.setCharacterEncoding("UTF-8");
+        servletResponse.setContentType(CONTENTTYPE);
+        servletResponse.setCharacterEncoding(ENCODING);
+        servletRequest.setCharacterEncoding(ENCODING);
         chain.doFilter(servletRequest,servletResponse);
     }
 
