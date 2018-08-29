@@ -8,17 +8,17 @@ public class Showtime {
     private LocalDate date;
     private LocalDateTime startTime;
     private Movie movie;
-    private SHOW_STATUS showStatus;
+    private Show_Status showStatus;
 
-    public enum SHOW_STATUS {
+    public enum Show_Status {
         ACTIVE, CANCELED
     }
 
-    public SHOW_STATUS getShowStatus() {
+    public Show_Status getShowStatus() {
         return showStatus;
     }
 
-    public void setShowStatus(SHOW_STATUS showStatus) {
+    public void setShowStatus(Show_Status showStatus) {
         this.showStatus = showStatus;
     }
 
