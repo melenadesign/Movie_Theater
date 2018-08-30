@@ -1,5 +1,7 @@
 package model.dao.impl;
 
+import model.dao.*;
+
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.DriverManager;

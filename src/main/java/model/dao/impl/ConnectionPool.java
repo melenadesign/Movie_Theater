@@ -4,7 +4,7 @@ import org.apache.commons.dbcp.BasicDataSource;
 
 import javax.sql.DataSource;
 
-public class ConnectionPoolHolder {
+public class ConnectionPool {
     public static final String URL = "jdbc:mysql://localhost:3306/movie_theater";
     public static final String DB_USER = "root";
     public static final String DB_PASS = "root";
@@ -12,7 +12,7 @@ public class ConnectionPoolHolder {
     public static DataSource getDataSource(){
 
         if (dataSource == null){
-            synchronized (ConnectionPoolHolder.class) {
+            synchronized (ConnectionPool.class) {
                 if (dataSource == null) {
                     BasicDataSource ds = new BasicDataSource();
                     ds.setUrl(URL);

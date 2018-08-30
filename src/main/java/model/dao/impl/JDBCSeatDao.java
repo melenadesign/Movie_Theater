@@ -1,5 +1,9 @@
 package model.dao.impl;
 
+import model.dao.DaoException;
+import model.dao.SeatDao;
+import model.entity.Seat;
+
 import java.sql.Connection;
 import java.util.List;
 
@@ -12,31 +16,27 @@ public class JDBCSeatDao implements SeatDao {
 
 
     @Override
-    public void create(Seat entity) {
-
-    }
-
-    @Override
-    public Seat findById(int id) {
+    public Seat findById(int id) throws DaoException {
         return null;
     }
 
     @Override
-    public List<Seat> findAll() {
+    public List<Seat> findAll() throws DaoException {
         return null;
     }
 
     @Override
-    public void updateSeat(Seat entity) {
-
+    public Seat createSeat(Seat seat) throws DaoException {
+        return null;
     }
 
     @Override
-    public void deleteSeat(int id) {
-
+    public Seat updateSeat(Seat seat) throws DaoException {
+        return null;
     }
 
     @Override
-
-
+    public boolean deleteSeat(Seat seat) throws DaoException {
+        return false;
+    }
 }

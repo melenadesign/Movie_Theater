@@ -1,21 +1,19 @@
-package ua.tania.ann.model.dao;
+package model.dao;
 
-
-import ua.tania.ann.model.dao.impl.DAOFactoryImpl;
+import model.dao.impl.JDBCDaoFactory;
+import model.entity.Seat;
+import model.entity.Showtime;
 
 import java.sql.Connection;
 
-/**
- * Created by Таня on 17.08.2018.
- */
-public abstract class DAOFactory {
-    private static DAOFactory daoFactory;
+public abstract class DaoFactory {
+    private static DaoFactory daoFactory;
 
-    public MovieDao createMovieDao(Connection connection);
-    public SeatDao createSeatDao(Connection connection);
-    public ShowtimeDao createShowtimeDao(Connection connection);
-    public TicketDao createTicketDao(Connection connection);
-    public UserDao createUserDao(Connection connection);
+    public abstract UserDao createUserDao();
+    public abstract MovieDao createMovieDao();
+    public abstract TicketDao createTicketDao();
+    public abstract ShowtimeDao createShowtimeDao();
+    public abstract SeatDao createSeatDao();
 
     public static DaoFactory getInstance(){
         if( daoFactory == null ){

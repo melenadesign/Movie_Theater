@@ -1,4 +1,7 @@
-package dao;
+package model.dao;
+
+import model.dao.DaoException;
+import model.entity.Ticket;
 
 import java.util.List;
 
@@ -13,7 +16,7 @@ public interface TicketDao {
 
     /**
      * Find all tickets by user id
-     * @param id
+     * @param userId
      * @return list of tickets for user
      * @throws DaoException
      */

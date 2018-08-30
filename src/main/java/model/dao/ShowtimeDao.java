@@ -1,6 +1,9 @@
-package dao;
+package model.dao;
+
+import model.entity.Showtime;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public interface ShowtimeDao {
 

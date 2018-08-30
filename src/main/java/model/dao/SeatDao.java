@@ -1,4 +1,7 @@
-package dao;
+package model.dao;
+
+import model.dao.DaoException;
+import model.entity.Seat;
 
 import java.util.List;
 
@@ -24,7 +27,7 @@ public interface SeatDao {
      * @return Created seat
      * @throws DaoException
      */
-    Place createSeat(Seat seat) throws DaoException;
+    Seat createSeat(Seat seat) throws DaoException;
 
     /**
      * Edit seat
@@ -32,7 +35,7 @@ public interface SeatDao {
      * @return Edited seat
      * @throws DaoException
      */
-    Place updateSeat(Seat seat) throws DaoException;
+    Seat updateSeat(Seat seat) throws DaoException;
 
     /**
      * Delete seat

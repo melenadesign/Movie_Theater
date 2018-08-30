@@ -1,4 +1,6 @@
-package dao;
+package model.dao;
+
+import model.entity.Movie;
 
 import java.util.List;
 
@@ -24,7 +26,7 @@ public interface MovieDao {
      * @return Created movie
      * @throws DaoException
      */
-    Film createMovie(Movie movie) throws DaoException;
+    Movie createMovie(Movie movie) throws DaoException;
 
     /**
      * Edit movie
@@ -32,7 +34,7 @@ public interface MovieDao {
      * @return Edited movie
      * @throws DaoException
      */
-    Film updateMovie(Movie movie) throws DaoException;
+    Movie updateMovie(Movie movie) throws DaoException;
 
     /**
      * Delete movie
