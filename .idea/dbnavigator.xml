@@ -38,6 +38,7 @@
     <connection id="bdc18bfa-698a-4743-9b8d-59cf6f96d9cb" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-list connection-id="bdc18bfa-698a-4743-9b8d-59cf6f96d9cb" dataset="movie_theater.actor" active-filter-id="" />
     <filter-list connection-id="bdc18bfa-698a-4743-9b8d-59cf6f96d9cb" dataset="movie_theater.user" active-filter-id="" />
     <filter-list connection-id="bdc18bfa-698a-4743-9b8d-59cf6f96d9cb" dataset="movie_theater.directors" active-filter-id="" />
   </component>
@@ -87,7 +88,7 @@
           <password value="cm9vdA==" />
         </database>
         <properties>
-          <auto-commit value="false" />
+          <auto-commit value="true" />
         </properties>
         <ssh-settings>
           <active value="false" />

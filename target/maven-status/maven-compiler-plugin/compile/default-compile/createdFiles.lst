@@ -1,3 +1,4 @@
+controller\Servlet.class
 model\dao\impl\JDBCUserDao.class
 model\dao\impl\JDBCSeatDao.class
 model\dao\TicketDao.class
@@ -5,6 +6,7 @@ model\entity\Showtime$Show_Status.class
 model\entity\Showtime.class
 model\entity\User$ROLE.class
 model\dao\SeatDao.class
+controller\Command\ExceptionCommand.class
 controller\listener\SessionListener.class
 controller\Command\Command.class
 model\dao\MovieDao.class
@@ -22,6 +24,7 @@ model\dao\DaoException.class
 model\dao\impl\JDBCShowtimeDao.class
 model\dao\DaoFactory.class
 model\dao\impl\ConnectionPool.class
+controller\Command\LogoutCommand.class
 model\dao\impl\JDBCDaoFactory.class
 controller\filters\EncodingFilter.class
 model\dao\impl\JDBCMovieDao.class

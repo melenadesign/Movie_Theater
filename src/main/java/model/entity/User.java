@@ -7,16 +7,16 @@ public class User {
     private String password;
     private String email;
     private String phone;
-    private String username;
+    private String userName;
     private boolean isAdmin;
     private ROLE role;
 
-    public User(int userId, String password, String email, String phone, String username, boolean isAdmin, ROLE role) {
+    public User(int userId, String password, String email, String phone, String userName, boolean isAdmin, ROLE role) {
         this.userId = userId;
         this.password = password;
         this.email = email;
         this.phone = phone;
-        this.username = username;
+        this.userName = userName;
         this.isAdmin = isAdmin;
         this.role = role;
     }
@@ -61,11 +61,11 @@ public class User {
     }
 
     public String getUsername() {
-        return username;
+        return userName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public boolean isAdmin() {

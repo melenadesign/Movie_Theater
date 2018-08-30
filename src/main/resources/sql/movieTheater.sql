@@ -173,3 +173,4 @@ ALTER TABLE movie_theater.showtimes MODIFY COLUMN start_time TIME;
 ALTER TABLE movie_theater.showtimes DROP COLUMN dayTime_show;
 ALTER TABLE `movie_theater`.`movie` CHANGE COLUMN `desc` `description` VARCHAR(255);
 ALTER TABLE movie_theater.movie DROP COLUMN rating;
+ALTER TABLE movie_theater.showtimes ADD COLUMN status VARCHAR(50);
