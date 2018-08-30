@@ -10,6 +10,15 @@ public class Showtime {
     private Movie movie;
     private Show_Status showStatus;
 
+    public Showtime(int showtimeId, LocalDate date, LocalDateTime startTime, Movie movie, Show_Status showStatus) {
+        this.showtimeId = showtimeId;
+        this.date = date;
+        this.startTime = startTime;
+        this.movie = movie;
+        this.showStatus = showStatus;
+    }
+    //todo builder may be
+
     public enum Show_Status {
         ACTIVE, CANCELED
     }

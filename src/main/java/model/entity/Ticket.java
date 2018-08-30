@@ -10,6 +10,15 @@ public class Ticket {
     private BigDecimal price;
     private User user;
 
+    public Ticket(Long ticketId, Showtime showtime, Seat seat, Status status, BigDecimal price, User user) {
+        this.ticketId = ticketId;
+        this.showtime = showtime;
+        this.seat = seat;
+        this.status = status;
+        this.price = price;
+        this.user = user;
+    }
+    //todo builder may be
 
     public Long getTicketId() {
         return ticketId;

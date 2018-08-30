@@ -1,4 +1,4 @@
 package controller.Command;
 
-public class LogoutCommand extends Command {
+public class LogoutCommand implements Command {
 }

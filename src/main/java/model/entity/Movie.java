@@ -7,13 +7,26 @@ public class Movie {
     private int movieLength;
     private String posterUrl;
     private String trailerUrl;
-//    private Rating movieRating;
-//
-//    public enum Rating {
-//        BAD(1), BORING(2), NORMAL(3), GOOD(4), EXCELENT(5);
-//
-//
-//    }
+
+
+/*    private Rating movieRating;
+
+    public enum Rating {
+        BAD(1), BORING(2), NORMAL(3), GOOD(4), EXCELENT(5);
+
+
+    }*/
+
+public Movie(int movieId, String movieTitle, String description, int movieLength, String posterUrl, String trailerUrl) {
+    this.movieId = movieId;
+    this.movieTitle = movieTitle;
+    this.description = description;
+    this.movieLength = movieLength;
+    this.posterUrl = posterUrl;
+    this.trailerUrl = trailerUrl;
+}
+
+    //todo builder may be
 
     public int getMovieId() {
         return movieId;

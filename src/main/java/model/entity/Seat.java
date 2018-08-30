@@ -5,6 +5,13 @@ public class Seat {
     private int rowNumber;
     private int seatNumber;
 
+    public Seat(int seatId, int rowNumber, int seatNumber) {
+        this.seatId = seatId;
+        this.rowNumber = rowNumber;
+        this.seatNumber = seatNumber;
+    }
+    //todo builder may be
+
     public int getSeatId() {
         return seatId;
     }

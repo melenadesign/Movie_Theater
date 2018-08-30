@@ -11,6 +11,16 @@ public class User {
     private boolean isAdmin;
     private ROLE role;
 
+    public User(int userId, String password, String email, String phone, String username, boolean isAdmin, ROLE role) {
+        this.userId = userId;
+        this.password = password;
+        this.email = email;
+        this.phone = phone;
+        this.username = username;
+        this.isAdmin = isAdmin;
+        this.role = role;
+    }
+    //todo builder may be, isAdmin to db/method impl
     public enum ROLE {
         USER, ADMIN, GUEST
     }
