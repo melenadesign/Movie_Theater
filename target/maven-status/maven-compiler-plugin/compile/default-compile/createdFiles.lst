@@ -21,7 +21,9 @@ model\dao\ShowtimeDao.class
 model\entity\Seat.class
 model\entity\Ticket$Status.class
 model\dao\DaoException.class
+controller\Command\RegisterCommand.class
 model\dao\impl\JDBCShowtimeDao.class
+controller\filters\AuthFilter.class
 model\dao\DaoFactory.class
 model\dao\impl\ConnectionPool.class
 controller\Command\LogoutCommand.class

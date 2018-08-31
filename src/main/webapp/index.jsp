@@ -1,81 +1,14 @@
-<!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.util.*, java.text.*" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<fmt:setLocale value="${language}"/>
+<fmt:setBundle basename="WebappMessages"/>
+<!DOCTYPE html>
 <html>
-<<<<<<< HEAD
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<title>Кинотеатр  </title>
-<meta name="description" content="movie showtimes">
-<meta name="keywords" content="movie showtimes, movie tickets">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/styles.css">
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery-3.3.1.slim.min.js"></script>
-<!-- <script src="js/jquery.min.js"></script> -->
-<script src="js/popper.min.js"></script>
-<body>
 
+<jsp:include page="layout/header.jsp" />
 
-<div class="container">
-      <header class="blog-header py-3">
-        <div class="row flex-nowrap justify-content-between align-items-center">
-          <div class="col-8 pt-1">
-      <nav class="navbar navbar-expand-lg fixed-top bg-white border-bottom">
-      <a href="#" title="Movie Theatre"><span class="navbar-brand">Movie Theatre</span></a>
-
-            
-
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="icon-bar text-dark">--</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-
-      </nav>
-
-
-
-          </div>
-    <div class="col-2 d-flex nav navbar-nav ml-auto">
-<!--             <a class="text-muted" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
-            </a> -->
-      <select class="selectpicker" >
-        <option data-content='<span class="flag-icon flag-icon-us"></span> English'>Eng</option>
-        <option  data-content='<span class="flag-icon flag-icon-uk"></span> Ukrainian'>Укр</option>
-      </select>
-
-      </div>
-
-    <div class="col-2 d-flex nav navbar-nav ml-auto">
-<!--             <a class="text-muted" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
-            </a> -->
-
-            <a class="btn btn-sm btn-outline-secondary" href="#">Sign in</a>
-      </div>
-
-        </div>
-      </header>
-
-      <div class="container py-1 mb-2 border-bottom">
-        <nav class="nav d-flex ">
-          <a class="p-2 " href="/cinema/movies">Movies</a>
-          <a class="p-2 " href="/cinema/showtimes">Showtimes</a>
-=======
-<c:import url="/header.jsp" charEncoding="utf-8"/>
-
-      <div class="container py-1 mb-2 border-bottom">
-        <nav class="nav d-flex ">
-          <a class="p-2 " href="/movies">Фильмы</a>
-          <a class="p-2 " href="/showtimes">Сеансы</a>
->>>>>>> e917ae97c38a952990409d57a27eb88f8c567a44
-        </nav>
-      </div>
 
 <!--       <div class="jumbotron p-3 p-md-5 text-dark rounded bg-blue ">
         <div class="col-md-6 px-0">
@@ -117,28 +50,6 @@
       </div>
     </div>
 
+<jsp:include page="layout/footer.jsp" />
 
-<<<<<<< HEAD
-
-
-
-
-
-
-<footer class="footer">
-  <div class="row">
-    <div class="col-xs-12 col-md-4">&copy MovieTheatre</div>
-    <div class="col-xs-12 col-md-4">Menu</div>
-    <div class="col-xs-12 col-md-4">Contacts</div>
-  </div>
-</footer>
-</div>
-
-</body>
-<script>$(function(){
-    $('.selectpicker').selectpicker();
-});</script>
-=======
-<c:import url="/footer.jsp" />
->>>>>>> e917ae97c38a952990409d57a27eb88f8c567a44
 </html>

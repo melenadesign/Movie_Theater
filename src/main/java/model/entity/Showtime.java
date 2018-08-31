@@ -1,9 +1,8 @@
 package model.entity;
 
-<<<<<<< HEAD
+
 import java.math.BigDecimal;
-=======
->>>>>>> e917ae97c38a952990409d57a27eb88f8c567a44
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -12,24 +11,17 @@ public class Showtime {
     private LocalDate date;
     private LocalDateTime startTime;
     private Movie movie;
-<<<<<<< HEAD
+
     private BigDecimal price;
     private Show_Status showStatus;
 
     public Showtime(int showtimeId, LocalDate date, LocalDateTime startTime, Movie movie, BigDecimal price, Show_Status showStatus) {
-=======
-    private Show_Status showStatus;
 
-    public Showtime(int showtimeId, LocalDate date, LocalDateTime startTime, Movie movie, Show_Status showStatus) {
->>>>>>> e917ae97c38a952990409d57a27eb88f8c567a44
         this.showtimeId = showtimeId;
         this.date = date;
         this.startTime = startTime;
         this.movie = movie;
-<<<<<<< HEAD
         this.price = price;
-=======
->>>>>>> e917ae97c38a952990409d57a27eb88f8c567a44
         this.showStatus = showStatus;
     }
     //todo builder may be
@@ -78,7 +70,6 @@ public class Showtime {
         this.movie = movie;
     }
 
-<<<<<<< HEAD
     public BigDecimal getPrice() {
         return price;
     }
@@ -87,6 +78,4 @@ public class Showtime {
         this.price = price;
     }
 
-=======
->>>>>>> e917ae97c38a952990409d57a27eb88f8c567a44
 }

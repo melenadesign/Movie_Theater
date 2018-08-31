@@ -3,16 +3,25 @@ package model.dao.impl;
 import model.dao.DaoException;
 import model.dao.UserDao;
 import model.entity.User;
+import org.apache.log4j.Logger;
 
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class JDBCUserDao implements UserDao {
+    private static Logger log = Logger.getLogger(JDBCUserDao.class);
+    private static ResourceBundle QUERIES = ResourceBundle.getBundle("Queries");
     private Connection connection;
+
+    private static final String USER_ID = "user_id";
+    private static final String USER_NAME = "username";
+    private static final String USER_EMAIL = "email";
+    private static final String USER_PASSWORD = "password";
+    private static final String USER_PHONE = "phone";
+    private static final String USER_ROLE = "role";
+
+
 
     public JDBCUserDao(Connection connection) {
         this.connection = connection;
@@ -21,7 +30,22 @@ public class JDBCUserDao implements UserDao {
 
     @Override
     public User findById(int id) throws DaoException {
-        return null;
+        List<User> users;
+
+        try(PreparedStatement statement = connection.prepareStatement(QUERIES.getString("user.select.by.id"))) {
+            statement.setInt(1, id);
+            ResultSet resultSet = statement.executeQuery();
+            users = handleResultSet(resultSet);
+        } catch (SQLException | DaoException e) {
+            log.error("Could not get user by id=" + id, e);
+            throw  new DaoException("Could not get user by id=" + id, e);
+        }
+
+        if (users.isEmpty()){
+            return null;
+        }
+
+        return users.get(0);
     }
 
     @Override
@@ -49,3 +73,27 @@ public class JDBCUserDao implements UserDao {
         return false;
     }
 }
+    private List<User> handleResultSet(ResultSet resultSet) throws DaoException {
+        List<User> users = new ArrayList<>();
+
+        try {
+            while (resultSet.next()){
+                User user = new User(USER_ID, USER_PASSWORD, USER_EMAIL, USER_NAME, USER_PHONE, USER_ROLE);
+
+                users.add(user);
+            }
+        } catch (SQLException e) {
+            log.error("Could not read result set", e);
+            throw new DaoException("Could not read result set", e);
+        }
+
+        return users;
+    }
+
+
+    USER_ID = "user_id";
+private static final String USER_NAME = "username";
+private static final String USER_EMAIL = "email";
+private static final String USER_PASSWORD = "password";
+private static final String USER_PHONE = "phone";
+private static final String USER_ROLE = "role";

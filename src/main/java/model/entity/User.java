@@ -8,16 +8,16 @@ public class User {
     private String email;
     private String phone;
     private String userName;
-    private boolean isAdmin;
+//    private boolean isAdmin;
     private ROLE role;
 
-    public User(int userId, String password, String email, String phone, String userName, boolean isAdmin, ROLE role) {
+    public User(int userId, String password, String email, String phone, String userName, ROLE role) {
         this.userId = userId;
         this.password = password;
         this.email = email;
         this.phone = phone;
         this.userName = userName;
-        this.isAdmin = isAdmin;
+//        this.isAdmin = isAdmin;
         this.role = role;
     }
     //todo builder may be, isAdmin to db/method impl
@@ -68,13 +68,13 @@ public class User {
         this.userName = userName;
     }
 
-    public boolean isAdmin() {
-        return isAdmin;
-    }
-
-    public void setAdmin(boolean admin) {
-        isAdmin = admin;
-    }
+//    public boolean isAdmin() {
+//        return isAdmin;
+//    }
+//
+//    public void setAdmin(boolean admin) {
+//        isAdmin = admin;
+//    }
 
 
 }
