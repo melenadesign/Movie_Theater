@@ -18,11 +18,20 @@ public class LoginCommand implements Command {
 
 
         if( name == null || name.equals("") || pass == null || pass.equals("")  ){
+<<<<<<< HEAD
 
             return "/login.jsp";
         }
         System.out.println(name + " " + pass);
 
+=======
+            //System.out.println("Not logged in");
+            return "/login.jsp";
+        }
+        System.out.println(name + " " + pass);
+        //System.out.println("login success!");
+//todo: check login with DB
+>>>>>>> e917ae97c38a952990409d57a27eb88f8c567a44
 
         if(CommandUtil.checkUserIsLogged(request, name)){
             return "/WEB-INF/error.jsp";

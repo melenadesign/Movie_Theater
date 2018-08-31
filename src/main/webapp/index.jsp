@@ -3,6 +3,7 @@
 <%@ page import="java.util.*, java.text.*" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
+<<<<<<< HEAD
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -65,6 +66,14 @@
         <nav class="nav d-flex ">
           <a class="p-2 " href="/cinema/movies">Movies</a>
           <a class="p-2 " href="/cinema/showtimes">Showtimes</a>
+=======
+<c:import url="/header.jsp" charEncoding="utf-8"/>
+
+      <div class="container py-1 mb-2 border-bottom">
+        <nav class="nav d-flex ">
+          <a class="p-2 " href="/movies">Фильмы</a>
+          <a class="p-2 " href="/showtimes">Сеансы</a>
+>>>>>>> e917ae97c38a952990409d57a27eb88f8c567a44
         </nav>
       </div>
 
@@ -109,6 +118,7 @@
     </div>
 
 
+<<<<<<< HEAD
 
 
 
@@ -128,4 +138,7 @@
 <script>$(function(){
     $('.selectpicker').selectpicker();
 });</script>
+=======
+<c:import url="/footer.jsp" />
+>>>>>>> e917ae97c38a952990409d57a27eb88f8c567a44
 </html>

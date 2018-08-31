@@ -172,7 +172,11 @@ CREATE TABLE IF NOT EXISTS `movie_theater`.`movie_directors` (
 ALTER TABLE movie_theater.showtimes MODIFY COLUMN start_time TIME;
 ALTER TABLE movie_theater.showtimes DROP COLUMN dayTime_show;
 ALTER TABLE `movie_theater`.`movie` CHANGE COLUMN `desc` `description` VARCHAR(255);
+<<<<<<< HEAD
 ALTER TABLE movie_theater.movie DROP COLUMN rating;
 ALTER TABLE movie_theater.showtimes ADD COLUMN status VARCHAR(50);
 ALTER TABLE movie_theater.showtimes ADD COLUMN price DECIMAL NOT NULL;
 ALTER TABLE movie_theater.ticket DROP COLUMN price;
+=======
+ALTER TABLE movie_theater.movie DROP COLUMN rating;
+>>>>>>> e917ae97c38a952990409d57a27eb88f8c567a44
