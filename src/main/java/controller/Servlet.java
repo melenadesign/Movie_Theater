@@ -1,9 +1,6 @@
 package controller;
 
-import controller.Command.Command;
-import controller.Command.ExceptionCommand;
-import controller.Command.LoginCommand;
-import controller.Command.LogoutCommand;
+import controller.Command.*;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
@@ -20,7 +17,7 @@ public class Servlet extends HttpServlet {
 
     public void init(ServletConfig servletConfig){
         servletConfig.getServletContext().setAttribute("loggedUsers", new HashSet<String>());
-
+        commands.put("register", new RegisterCommand());
         commands.put("login", new LoginCommand());
         commands.put("logout", new LogoutCommand());
         commands.put("exception" , new ExceptionCommand());
@@ -29,13 +26,13 @@ public class Servlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException {
         handleRequest(request, response);
-        //response.getWriter().print("Hello from doGet");
+
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException {
         handleRequest(request, response);
-        //response.getWriter().print("Hello from doPost");
+
     }
 
     private void handleRequest(HttpServletRequest request, HttpServletResponse response)
