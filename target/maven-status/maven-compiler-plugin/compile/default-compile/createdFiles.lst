@@ -1,6 +1,7 @@
 controller\Servlet.class
 model\dao\impl\JDBCUserDao.class
 model\dao\impl\JDBCSeatDao.class
+controller\filters\LocaleFilter.class
 model\dao\TicketDao.class
 model\entity\Showtime$Show_Status.class
 model\entity\Showtime.class

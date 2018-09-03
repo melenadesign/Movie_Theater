@@ -72,14 +72,13 @@ public class JDBCUserDao implements UserDao {
     public boolean deleteUser(User user) throws DaoException {
         return false;
     }
-}
     private List<User> handleResultSet(ResultSet resultSet) throws DaoException {
         List<User> users = new ArrayList<>();
 
         try {
             while (resultSet.next()){
-                User user = new User(USER_ID, USER_PASSWORD, USER_EMAIL, USER_NAME, USER_PHONE, USER_ROLE);
-
+/*                User user = new User(USER_ID, USER_PASSWORD, USER_EMAIL, USER_NAME, USER_PHONE, USER_ROLE);*/
+            User user = new User();
                 users.add(user);
             }
         } catch (SQLException e) {
@@ -89,11 +88,5 @@ public class JDBCUserDao implements UserDao {
 
         return users;
     }
+}
 
-
-    USER_ID = "user_id";
-private static final String USER_NAME = "username";
-private static final String USER_EMAIL = "email";
-private static final String USER_PASSWORD = "password";
-private static final String USER_PHONE = "phone";
-private static final String USER_ROLE = "role";

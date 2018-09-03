@@ -10,7 +10,9 @@ public class User {
     private String userName;
 //    private boolean isAdmin;
     private ROLE role;
+    public User() {
 
+    }
     public User(int userId, String password, String email, String phone, String userName, ROLE role) {
         this.userId = userId;
         this.password = password;

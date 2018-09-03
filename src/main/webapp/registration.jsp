@@ -3,7 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <fmt:setLocale value="${language}"/>
-<fmt:setBundle basename="WebappMessages"/>
+<fmt:setBundle basename="resources"/>
 <!DOCTYPE html>
 <html>
 
@@ -20,7 +20,7 @@
                                 <h3 class="form-signin"><fmt:message key="registration.error.message"/></h3>
                             </c:if>
                             <c:if test="${failRegex}">
-                                <h3 class="form-signin"><fmt:message key="registration.wrong.input"/></h3>
+                                <h3 class="form-signin"><fmt:message key="registration.error.input"/></h3>
                             </c:if>
                             <div class="form-group">
                                 <label for="userName"><fmt:message key="registration.name"/></label>

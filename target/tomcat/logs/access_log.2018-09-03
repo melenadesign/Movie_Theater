@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [03/Sep/2018:14:18:02 +0300] "GET /cinema/?language=uk_UA HTTP/1.1" 200 5909 http-bio-8888-exec-1 5
+0:0:0:0:0:0:0:1 - - [03/Sep/2018:14:18:02 +0300] "GET /cinema/css/styles.css HTTP/1.1" 200 5887 http-bio-8888-exec-1 5
+0:0:0:0:0:0:0:1 - - [03/Sep/2018:14:18:02 +0300] "GET /cinema/css/flag-icon.min.css HTTP/1.1" 200 5887 http-bio-8888-exec-1 4
+0:0:0:0:0:0:0:1 - - [03/Sep/2018:14:18:03 +0300] "GET /cinema/js/bootstrap.min.js HTTP/1.1" 200 5887 http-bio-8888-exec-1 549
+0:0:0:0:0:0:0:1 - - [03/Sep/2018:14:18:03 +0300] "GET /cinema/css/bootstrap.min.css HTTP/1.1" 200 5887 http-bio-8888-exec-9 566
+0:0:0:0:0:0:0:1 - - [03/Sep/2018:14:18:03 +0300] "GET /cinema/js/popper.min.js HTTP/1.1" 200 5887 http-bio-8888-exec-10 488
+0:0:0:0:0:0:0:1 - - [03/Sep/2018:14:18:03 +0300] "GET /cinema/js/jquery-3.3.1.slim.min.js HTTP/1.1" 200 5887 http-bio-8888-exec-3 513
