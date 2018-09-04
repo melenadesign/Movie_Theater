@@ -24,19 +24,19 @@
                             </c:if>
                             <div class="form-group">
                                 <label for="userName"><fmt:message key="registration.name"/></label>
-                                <input required type="text" class="form-control" id="userName" name="name" placeholder="Name">
+                                <input required type="text" class="form-control" id="userName" name="name" placeholder="<fmt:message key="registration.name"/>">
                             </div>
                             <div class="form-group">
                                 <label for="email"><fmt:message key="registration.email"/></label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Email address" required>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="<fmt:message key="registration.email"/>" required>
                             </div>
                             <div class="form-group">
                                 <label for="phone"><fmt:message key="registration.phone"/></label>
-                                <input type="email" class="form-control" id="phone" name="phone" placeholder="Phone number">
+                                <input type="email" class="form-control" id="phone" name="phone" placeholder="<fmt:message key="registration.phone"/>">
                             </div>
                             <div class="form-group">
                                 <label for="pass"><fmt:message key="registration.password"/></label>
-                                <input type="pass" class="form-control" id="pass" name="password" placeholder="Password" required>
+                                <input type="pass" class="form-control" id="pass" name="password" placeholder="<fmt:message key="registration.password"/>" required>
                             </div>
                             <button class="btn btn-lg  btn-outline-primary btn-block" type="submit"><fmt:message key="registration.do.register"/></button>
                         </form>

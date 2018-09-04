@@ -79,4 +79,15 @@ public class User {
 //    }
 
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + userId +
+                ", name='" + userName + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", role=" + role +
+                '}';
+    }
+
 }
