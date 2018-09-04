@@ -14,7 +14,7 @@
         <div class="row p-3 p-md-5 m-md-3">
           <div class="col-sm-12 col-lg-6 m-auto">
 
-                        <form action="?command=register" method="post" class="form-signin mt">
+                        <form action="${pageContext.request.contextPath}/?command=register" method="post" class="form-signin mt">
                             <h2 class="form-signin-heading"><fmt:message key="registration.registration"/></h2>
                             <c:if test="${errorMessage}">
                                 <h3 class="form-signin"><fmt:message key="registration.error.message"/></h3>
