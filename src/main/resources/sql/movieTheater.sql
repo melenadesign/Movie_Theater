@@ -178,4 +178,7 @@ ALTER TABLE movie_theater.showtimes ADD COLUMN status VARCHAR(50);
 ALTER TABLE `movie_theater`.`showtimes` ADD COLUMN `price` DECIMAL NOT NULL;
 ALTER TABLE movie_theater.ticket DROP COLUMN price;
 --ALTER TABLE movie_theater.showtimes ADD COLUMN status VARCHAR(50);
-
+--UPDATE `movie_theater`.`user`   SET role = '0' WHERE user_id = 2;
+--UPDATE `movie_theater`.`user`   SET role = '0' WHERE user_id = 3;
+--UPDATE `movie_theater`.`user`   SET role = '1' WHERE user_id = 1;
+ALTER TABLE movie_theater.user CHANGE COLUMN role isAdmin TINYINT;

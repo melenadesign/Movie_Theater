@@ -1,3 +1,0 @@
-0:0:0:0:0:0:0:1 - - [04/Sep/2018:18:25:46 +0300] "GET /cinema/registration.jsp?language=uk_UA HTTP/1.1" 200 4271 http-bio-8888-exec-2 3490
-0:0:0:0:0:0:0:1 - - [04/Sep/2018:18:32:27 +0300] "GET /cinema/registration.jsp?language=en HTTP/1.1" 200 4195 http-bio-8888-exec-5 23
-0:0:0:0:0:0:0:1 - - [04/Sep/2018:18:32:28 +0300] "GET /cinema/registration.jsp?command=login HTTP/1.1" 200 4187 http-bio-8888-exec-6 76

@@ -14,6 +14,13 @@ public interface UserDao {
     User findById(int id) throws DaoException;
 
     /**
+     * Find user by name
+     * @param name
+     * @throws DaoException
+     */
+
+    User findByName(String name) throws DaoException;
+    /**
      * Find user by email
      * @param email
      * @return user, else null
@@ -52,4 +59,6 @@ public interface UserDao {
      * @throws DaoException
      */
     boolean deleteUser(User user) throws DaoException;
+
+
 }

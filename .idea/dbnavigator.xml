@@ -31,7 +31,8 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="bdc18bfa-698a-4743-9b8d-59cf6f96d9cb">
-      <console name="Connection" type="STANDARD"><![CDATA[ALTER TABLE movie_theater.directors RENAME TO movie_theater.movie_directors;]]></console>
+      <console name="Connection" type="STANDARD"><![CDATA[SELECT * FROM `user`
+UPDATE user SET user_id='3' WHERE user_id="4"]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">

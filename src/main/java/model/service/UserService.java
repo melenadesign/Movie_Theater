@@ -10,12 +10,12 @@ public interface UserService {
      * Return user if exist
      * and correct email/password,
      * null otherwise
-     * @param email user email
+     * @param name user name
      * @param password user password
      * @return user
      * @throws ServiceException
      */
-    User login(String email, String password) throws ServiceException;
+    User login(String name, String password) throws ServiceException;
 
     /**
      * Validate and create user
