@@ -15,7 +15,7 @@ public class RolePathCommand implements Command{
         if(user == null ){
             request.getSession().setAttribute("resPage", "/WEB-INF/index.jsp");
             request.getRequestDispatcher("/WEB-INF/index.jsp").forward(request, response);
-            return null;
+//            return null;
         }
 
         if(user.getIsAdmin()){
@@ -25,6 +25,6 @@ public class RolePathCommand implements Command{
             request.getSession().setAttribute("resPage", "/WEB-INF/user/index.jsp");
             request.getRequestDispatcher("/WEB-INF/user/index.jsp").forward(request, response);
         }
-        return null;
+//        return null;
     }
 }

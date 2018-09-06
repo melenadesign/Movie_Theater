@@ -3,17 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="0195b0cc-d8f4-4a5c-8150-1da542f8b46f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Command/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Command/ExceptionCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Command/ExceptionCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Command/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Command/LoginCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Command/LogoutCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Command/LogoutCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Command/RegisterCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Command/RegisterCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Command/GetShowtimesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Command/GetShowtimesCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Command/GetShowtimesInfoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Command/GetShowtimesInfoCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/Command/RolePathCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Command/RolePathCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Command/user/UserBuyTicketCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Command/user/UserBuyTicketCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Command/user/UserTicketsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Command/user/UserTicketsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/ShowtimeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/ShowtimeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/entity/Showtime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/entity/Showtime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Command/Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Command/RegisterCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/service/ServiceException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -118,18 +115,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserServiceImp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/service/impl/UserServiceImp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="26" selection-start-line="26" selection-end-line="26" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserBuyTicketCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/Command/user/UserBuyTicketCommand.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -157,11 +142,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShowtimeServiceImp.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/service/impl/ShowtimeServiceImp.java">
+      <file leaf-file-name="RolePathCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/Command/RolePathCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
+            <state relative-caret-position="540">
+              <caret line="27" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -169,11 +154,44 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="GetShowtimesCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/Command/GetShowtimesCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetShowtimesInfoCommand.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/Command/GetShowtimesInfoCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="25" column="68" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShowtimeServiceImp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/service/impl/ShowtimeServiceImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ShowtimeInfo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/dto/ShowtimeInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="59" selection-end-column="5" />
+            <state relative-caret-position="-937">
+              <caret line="56" selection-start-line="56" selection-end-line="59" selection-end-column="5" />
               <folding>
                 <element signature="e#428#429#0" expanded="true" />
                 <element signature="e#461#462#0" expanded="true" />
@@ -212,16 +230,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/model/entity/Ticket.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="321">
-              <caret line="66" column="33" lean-forward="true" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShowtimeDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/ShowtimeDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+              <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -234,15 +243,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JDBCTicketDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/impl/JDBCTicketDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -285,8 +285,9 @@
       <find>Can</find>
       <find>cancelTickets</find>
       <find>ession</find>
-      <find>Couldcel</find>
       <find>Session</find>
+      <find>Couldcel</find>
+      <find>getShowtimeInfoJson</find>
     </findStrings>
     <replaceStrings>
       <replace>movie</replace>
@@ -299,8 +300,8 @@
       <replace>showtimeId</replace>
       <replace>Could</replace>
       <replace>howtime</replace>
-      <replace>Cancel</replace>
       <replace>Showtime</replace>
+      <replace>Cancel</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -336,12 +337,9 @@
         <option value="$PROJECT_DIR$/src/main/java/model/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/service/impl/UserServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/dao/impl/JDBCUserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/Command/RolePathCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/Command/LogoutCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/Command/CommandUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/Command/LoginCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/Command/GetShowtimesCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/Command/GetShowtimesInfoCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/Command/admin/AdminMoviesCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/Command/admin/AdminNewMovie.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/Command/admin/AdminCancelShowtime.java" />
@@ -360,6 +358,9 @@
         <option value="$PROJECT_DIR$/src/main/java/model/entity/Showtime.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/Command/user/UserBuyTicketCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/service/impl/ShowtimeServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/Command/RolePathCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/Command/GetShowtimesCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/Command/GetShowtimesInfoCommand.java" />
       </list>
     </option>
   </component>
@@ -839,7 +840,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="11" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31879196" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31879196" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="5" />
@@ -1088,30 +1089,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Command/RolePathCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Command/GetShowtimesCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Command/GetShowtimesInfoCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/Command/admin/AdminMoviesCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -1269,10 +1246,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/entity/Ticket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Command/user/UserBuyTicketCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="78" column="45" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Command/GetShowtimesCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Command/RolePathCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="27" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/entity/Showtime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-477">
+          <caret line="21" selection-start-line="21" selection-start-column="2" selection-end-line="29" selection-end-column="7" />
+          <folding>
+            <element signature="e#1819#1820#0" expanded="true" />
+            <element signature="e#1859#1860#0" expanded="true" />
+            <element signature="e#2625#2626#0" expanded="true" />
+            <element signature="e#2663#2664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/service/impl/ShowtimeServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/dto/ShowtimeInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="59" selection-end-column="5" />
+        <state relative-caret-position="-937">
+          <caret line="56" selection-start-line="56" selection-end-line="59" selection-end-column="5" />
           <folding>
             <element signature="e#428#429#0" expanded="true" />
             <element signature="e#461#462#0" expanded="true" />
@@ -1306,40 +1340,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/entity/Ticket.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Command/GetShowtimesInfoCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="66" column="33" lean-forward="true" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/entity/Showtime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-477">
-          <caret line="21" selection-start-line="21" selection-start-column="2" selection-end-line="29" selection-end-column="7" />
-          <folding>
-            <element signature="e#1819#1820#0" expanded="true" />
-            <element signature="e#1859#1860#0" expanded="true" />
-            <element signature="e#2625#2626#0" expanded="true" />
-            <element signature="e#2663#2664#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Command/user/UserBuyTicketCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="78" column="45" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/service/impl/ShowtimeServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
+        <state relative-caret-position="318">
+          <caret line="25" column="68" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

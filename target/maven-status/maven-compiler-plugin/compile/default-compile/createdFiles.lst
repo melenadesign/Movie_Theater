@@ -1,4 +1,1 @@
-controller\Command\Command.class
 model\dao\DaoException.class
-controller\Command\RegisterCommand.class
-model\service\ServiceException.class
