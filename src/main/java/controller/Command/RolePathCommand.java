@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class RolePathCommand implements Command{
     @Override
-    public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         User user = (User) request.getSession().getAttribute("user");
 //||  user.isAdmin()== null deleted
         if(user == null ){

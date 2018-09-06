@@ -1,7 +1,5 @@
 package controller.Command;
 
-import model.dao.UserDao;
-import model.dao.impl.JDBCUserDao;
 import model.entity.User;
 import model.service.ServiceException;
 import model.service.UserService;
@@ -17,7 +15,7 @@ public class LoginCommand implements Command {
     private static Logger log = Logger.getLogger(LoginCommand.class);
 
     @Override
-    public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String name = request.getParameter("name");
         String pass = request.getParameter("password");
 

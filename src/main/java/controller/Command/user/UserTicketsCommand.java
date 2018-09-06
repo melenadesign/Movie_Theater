@@ -10,7 +10,7 @@ import java.io.IOException;
 public class UserTicketsCommand implements Command {
 
     @Override
-    public String execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.getSession().setAttribute("resPage", "/WEB-INF/user/tickets.jsp");
         req.getRequestDispatcher("/WEB-INF/user/tickets.jsp").forward(req, resp);
         return ("/WEB-INF/user/tickets.jsp");

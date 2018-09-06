@@ -10,7 +10,7 @@ import java.io.IOException;
 public class RegisterCommand implements Command {
     private static Logger log = Logger.getLogger(LoginCommand.class);
     @Override
-    public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         return null;
     }
 }
