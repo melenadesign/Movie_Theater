@@ -1,5 +1,0 @@
-0:0:0:0:0:0:0:1 - - [06/Sep/2018:14:30:21 +0300] "POST /cinema/?command=register HTTP/1.1" 200 6248 http-bio-8888-exec-1 5571
-0:0:0:0:0:0:0:1 - - [06/Sep/2018:14:30:21 +0300] "GET /cinema/ HTTP/1.1" 200 6248 http-bio-8888-exec-2 681
-0:0:0:0:0:0:0:1 - - [06/Sep/2018:14:30:22 +0300] "GET /cinema/?command=login HTTP/1.1" 200 6248 http-bio-8888-exec-5 14
-0:0:0:0:0:0:0:1 - - [06/Sep/2018:14:30:31 +0300] "GET /cinema/login.jsp HTTP/1.1" 200 4140 http-bio-8888-exec-7 893
-0:0:0:0:0:0:0:1 - - [06/Sep/2018:14:30:38 +0300] "POST /cinema/login.jsp?command=login HTTP/1.1" 200 4140 http-bio-8888-exec-10 17

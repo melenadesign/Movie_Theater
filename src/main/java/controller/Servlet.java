@@ -63,7 +63,7 @@ public class Servlet extends HttpServlet {
 
     }
 
-    private Command handleRequest(HttpServletRequest request, HttpServletResponse response)
+    Command handleRequest(HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException {
         Command command;
         String rolePath = request.getParameter("command");
@@ -94,4 +94,4 @@ public class Servlet extends HttpServlet {
     }
 
 
-}
+
