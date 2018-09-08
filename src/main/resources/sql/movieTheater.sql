@@ -168,7 +168,7 @@ CREATE TABLE IF NOT EXISTS `movie_theater`.`movie_directors` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
-
+ALTER TABLE movie_theater.directors RENAME TO movie_theater.movie_directors;
 ALTER TABLE movie_theater.showtimes MODIFY COLUMN start_time TIME;
 ALTER TABLE movie_theater.showtimes DROP COLUMN dayTime_show;
 ALTER TABLE `movie_theater`.`movie` CHANGE COLUMN `desc` `description` VARCHAR(255);
@@ -178,4 +178,7 @@ ALTER TABLE movie_theater.showtimes ADD COLUMN status VARCHAR(50);
 ALTER TABLE `movie_theater`.`showtimes` ADD COLUMN `price` DECIMAL NOT NULL;
 ALTER TABLE movie_theater.ticket DROP COLUMN price;
 --ALTER TABLE movie_theater.showtimes ADD COLUMN status VARCHAR(50);
-
+--UPDATE `movie_theater`.`user`   SET role = '0' WHERE user_id = 2;
+--UPDATE `movie_theater`.`user`   SET role = '0' WHERE user_id = 3;
+--UPDATE `movie_theater`.`user`   SET role = '1' WHERE user_id = 1;
+ALTER TABLE movie_theater.user CHANGE COLUMN role isAdmin TINYINT;

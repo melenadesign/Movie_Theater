@@ -9,15 +9,15 @@ public class Ticket {
     private Status status;
     private User user;
 
-    public Ticket(Long ticketId, Showtime showtime, Seat seat, Status status, User user) {
-
-        this.ticketId = ticketId;
-        this.showtime = showtime;
-        this.seat = seat;
-        this.status = status;
-        this.user = user;
-    }
-    //todo builder may be
+//    public Ticket(Long ticketId, Showtime showtime, Seat seat, Status status, User user) {
+//
+//        this.ticketId = ticketId;
+//        this.showtime = showtime;
+//        this.seat = seat;
+//        this.status = status;
+//        this.user = user;
+//    }
+    //todo override
 
     public Long getTicketId() {
         return ticketId;
@@ -64,5 +64,51 @@ public class Ticket {
 }
 
 
+    public static class Builder {
+        private Ticket ticket;
 
+        public Builder(){
+            ticket = new Ticket();
+        }
+
+        public Builder setTicketId(Long id){
+            ticket.setTicketId(id);
+            return this;
+        }
+
+        public Builder setUser(User user){
+            ticket.setUser(user);
+            return this;
+        }
+
+        public Builder setShowtime(Showtime showtime){
+            ticket.setShowtime(showtime);
+            return this;
+        }
+
+        public Builder setSeat(Seat seat){
+            ticket.setSeat(seat);
+            return this;
+        }
+
+        public Builder setStatus(Status status){
+            ticket.setStatus(status);
+            return this;
+        }
+
+        public Ticket build(){
+            return ticket;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Ticket{" +
+                "id=" + ticketId +
+                ", user=" + user +
+                ", showtime=" + showtime +
+                ", seat=" + seat +
+                ", status=" + status +
+                '}';
+    }
 }

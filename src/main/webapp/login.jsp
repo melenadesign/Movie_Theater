@@ -21,12 +21,15 @@
                 <h3 class="form-signin"><fmt:message key="login.error.message"/></h3>
             </c:if>
             <div class="form-group">
-                <label for="email"><fmt:message key="login.email"/></label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Email address">
+              <!--  <label for="email"><fmt:message key="login.email"/></label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="<fmt:message key="login.email"/>"> -->
+                <label for="name"><fmt:message key="login.name"/></label>
+                                                <input required type="text" class="form-control" id="name" name="name" placeholder="<fmt:message key="login.name"/>">
+
             </div>
             <div class="form-group">
                 <label for="pass"><fmt:message key="login.password"/></label>
-                <input type="password" class="form-control" id="pass" name="password" placeholder="Password">
+                <input type="password" class="form-control" id="pass" name="password" placeholder="<fmt:message key="login.password"/>">
             </div>
 
             <button class="btn btn-lg btn-outline-primary btn-block" type="submit"><fmt:message key="login.signin"/></button>

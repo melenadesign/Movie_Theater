@@ -3,28 +3,32 @@ package model.entity;
 
 import java.math.BigDecimal;
 
+import java.sql.Time;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 public class Showtime {
     private int showtimeId;
-    private LocalDate date;
-    private LocalDateTime startTime;
+//    private LocalDate date;
+//    private LocalDateTime startTime;
+    private Date date;
+    private Time startTime;
     private Movie movie;
 
     private BigDecimal price;
     private Show_Status showStatus;
 
-    public Showtime(int showtimeId, LocalDate date, LocalDateTime startTime, Movie movie, BigDecimal price, Show_Status showStatus) {
-
-        this.showtimeId = showtimeId;
-        this.date = date;
-        this.startTime = startTime;
-        this.movie = movie;
-        this.price = price;
-        this.showStatus = showStatus;
-    }
-    //todo builder may be
+//    public Showtime(int showtimeId, Date date, Time startTime, Movie movie, BigDecimal price, Show_Status showStatus) {
+//
+//        this.showtimeId = showtimeId;
+//        this.date = date;
+//        this.startTime = startTime;
+//        this.movie = movie;
+//        this.price = price;
+//        this.showStatus = showStatus;
+//    }
+    //todo builder may be override
 
     public enum Show_Status {
         ACTIVE, CANCELED
@@ -46,19 +50,19 @@ public class Showtime {
         this.showtimeId = showtimeId;
     }
 
-    public LocalDate getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
-    public LocalDateTime getStartTime() {
+    public Time getStartTime() {
         return startTime;
     }
 
-    public void setStartTime(LocalDateTime startTime) {
+    public void setStartTime(Time startTime) {
         this.startTime = startTime;
     }
 
@@ -78,4 +82,49 @@ public class Showtime {
         this.price = price;
     }
 
+
+
+
+public class Builder{
+
+    private Showtime showtime;
+
+    public Builder(){
+         showtime = new Showtime();
+    }
+
+    public Builder setShowtimeId(int id){
+        showtime.setShowtimeId(id);
+        return this;
+    }
+
+    public Builder setMovie(Movie movie){
+        showtime.setMovie(movie);
+        return this;
+    }
+
+    public Builder setS(Time start){
+        showtime.setStartTime(start);
+        return this;
+    }
+
+    public Builder setPrice(BigDecimal price){
+        showtime.setPrice(price);
+        return this;
+    }
+
+    public Builder setDate(java.sql.Date date){
+        showtime.setDate(date);
+        return this;
+    }
+
+    public Builder setStatus(Showtime.Show_Status status){
+        showtime.setShowStatus(status);
+        return this;
+    }
+
+    public Showtime build(){
+        return showtime;
+    }
+}
 }

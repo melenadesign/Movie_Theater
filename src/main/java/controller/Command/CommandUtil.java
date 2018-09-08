@@ -6,18 +6,19 @@ import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.HashSet;
+import java.util.Set;
 
 public class CommandUtil {
     static void setUserRole(HttpServletRequest request,
-                            User.ROLE role, String name) {
+                            Boolean isAdmin, String userName) {
         HttpSession session = request.getSession();
         ServletContext context = request.getServletContext();
-        context.setAttribute("userName", name);
-        session.setAttribute("role", role);
+        context.setAttribute("user", userName);
+//        session.setAttribute("admin", isAdmin);
     }
 
     static boolean checkUserIsLogged(HttpServletRequest request, String userName){
-        HashSet<String> loggedUsers = (HashSet<String>) request.getSession().getServletContext()
+        Set<String> loggedUsers = (HashSet<String>) request.getSession().getServletContext()
                 .getAttribute("loggedUsers");
 
         if(loggedUsers.stream().anyMatch(userName::equals)){

@@ -6,6 +6,7 @@ import model.entity.Showtime;
 
 import java.sql.Connection;
 import java.time.LocalDate;
+import java.util.Date;
 import java.util.List;
 
 public class JDBCShowtimeDao implements ShowtimeDao {
@@ -18,7 +19,7 @@ public class JDBCShowtimeDao implements ShowtimeDao {
     }
 
     @Override
-    public List<Showtime> findByDate(LocalDate date) throws DaoException {
+    public List<Showtime> findByDate(Date date) throws DaoException {
         return null;
     }
 

@@ -6,7 +6,7 @@
 <fmt:setBundle basename="WebappMessages"/>
 
 
-<footer class="footer container-fluid border-top">
+<footer class="footer container-fluid border-top fixed-bottom">
 	<div class="container my-2">
 	<div class="row">
 
