@@ -18,6 +18,8 @@ public class LogoutCommand implements Command {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
 //        return "/index.jsp";
+
     }
 }

@@ -16,6 +16,7 @@ public class RegisterCommand implements Command {
     private static Logger log = Logger.getLogger(RegisterCommand.class);
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         String name = request.getParameter("name").trim();
         String email = request.getParameter("email").trim();
         String password = request.getParameter("password").trim();
@@ -43,5 +44,6 @@ public class RegisterCommand implements Command {
             request.getSession().setAttribute("previousPage", "/WEB-INF/login.jsp");
             request.getRequestDispatcher("/WEB-INF/login.jsp").forward(request, response);
         }
+
     }
 }

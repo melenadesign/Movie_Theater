@@ -27,6 +27,7 @@ public class LoginCommand implements Command {
             request.getRequestDispatcher("/WEB-INF/login.jsp").forward(request, response);
         }
         if(!CommandUtil.checkUserIsLogged(request, name)){
+
             request.getRequestDispatcher("/WEB-INF/error.jsp").forward(request, response);
 
         }
@@ -37,6 +38,7 @@ public class LoginCommand implements Command {
             log.error("Could not login user ", e);
         }
 
+
         if (user != null){
             request.getSession().setAttribute("user", user);
             new RolePathCommand().execute(request, response);
@@ -45,7 +47,9 @@ public class LoginCommand implements Command {
             request.getRequestDispatcher("/WEB-INF/login.jsp").forward(request, response);
         }
 
+
 //        return "/login.jsp";
+
 
     }
 }

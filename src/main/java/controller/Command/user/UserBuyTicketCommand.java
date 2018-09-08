@@ -35,6 +35,7 @@ public class UserBuyTicketCommand implements Command {
         }
 
         if(isShowtimeBegin(showtimeId)){
+
             req.setAttribute("ShowtimeStartMessage", true);
             req.getSession().setAttribute("showtimeId", showtimeId);
             req.getSession().setAttribute("resPage", "/WEB-INF/user/buy_ticket.jsp");

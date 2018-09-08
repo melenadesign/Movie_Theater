@@ -1,5 +1,6 @@
 package controller.Command.admin;
 
+<<<<<<< HEAD
 import controller.Command.Command;
 import model.service.ServiceException;
 import model.service.ShowtimeService;
@@ -33,5 +34,6 @@ public class AdminCancelShowtime implements Command {
         req.getSession().setAttribute("resPage", "/WEB-INF/admin/index.jsp");
         req.getRequestDispatcher("/WEB-INF/admin/index.jsp").forward(req, resp);
     }
+
 
 }

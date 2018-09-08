@@ -1,5 +1,6 @@
 package controller.Command.admin;
 
+<<<<<<< HEAD
 import controller.Command.Command;
 
 import javax.servlet.ServletException;
@@ -12,4 +13,5 @@ public class AdminMoviesCommand implements Command {
     public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
     }
+
 }
