@@ -26,6 +26,9 @@ body {
     height: 100%;
 	color:#111111;
 }
+.container {
+	padding-top: 50px;
+}
 
 /*******FOOTER*******/
 footer {

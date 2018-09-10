@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class GetShowtimesInfoCommand implements Command {
-    private static Logger log = Logger.getLogger(GetShowtimesInfoCommand.class);
+public class GetShowtimeInfoCommand implements Command {
+    private static Logger log = Logger.getLogger(GetShowtimeInfoCommand.class);
 
     public void execute(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         int showtimeId = Integer.valueOf(req.getParameter("showtimeId"));

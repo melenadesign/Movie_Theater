@@ -13,7 +13,7 @@ public class CommandUtil {
                             Boolean isAdmin, String userName) {
         HttpSession session = request.getSession();
         ServletContext context = request.getServletContext();
-        context.setAttribute("user", userName);
+        context.setAttribute("userName", userName);
 //        session.setAttribute("admin", isAdmin);
     }
 

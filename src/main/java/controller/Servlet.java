@@ -38,7 +38,7 @@ public class Servlet extends HttpServlet {
         defaultScope.put("getShowtimes", new GetShowtimesCommand());
 
 
-        defaultScope.put("getShowtimesInfo", new GetShowtimesInfoCommand());
+        defaultScope.put("getShowtimesInfo", new GetShowtimeInfoCommand());
 
         userScope.putAll(defaultScope);
         userScope.put("myTickets", new UserTicketsCommand());

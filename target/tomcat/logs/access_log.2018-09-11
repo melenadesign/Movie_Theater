@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [11/Sep/2018:01:15:43 +0300] "GET /cinema/ HTTP/1.1" 500 31 http-bio-8888-exec-2 2210
+0:0:0:0:0:0:0:1 - - [11/Sep/2018:01:15:49 +0300] "GET /cinema/ HTTP/1.1" 500 31 http-bio-8888-exec-4 47
+0:0:0:0:0:0:0:1 - - [11/Sep/2018:01:19:00 +0300] "GET /cinema/ HTTP/1.1" 500 31 http-bio-8888-exec-6 83
+0:0:0:0:0:0:0:1 - - [11/Sep/2018:01:19:30 +0300] "GET /cinema/css/bootstrap.min.css HTTP/1.1" 200 140938 http-bio-8888-exec-7 5

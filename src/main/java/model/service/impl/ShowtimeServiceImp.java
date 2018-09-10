@@ -54,7 +54,7 @@ public class ShowtimeServiceImp implements ShowtimeService {
     }
 
     @Override
-    public String getShowtimeInfoJson(int showtimeId) throws ServiceException {
+    public  String getShowtimeInfoJson(int showtimeId) throws ServiceException {
         try {
             return objectMapper.writeValueAsString(getShowtimeInfo(showtimeId));
         } catch (JsonProcessingException e) {

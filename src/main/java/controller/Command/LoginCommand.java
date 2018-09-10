@@ -16,7 +16,7 @@ public class LoginCommand implements Command {
 
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String name = request.getParameter("name");
+        String name = request.getParameter("userName");
         String pass = request.getParameter("password");
 
         UserService userService = new UserServiceImp();
@@ -26,11 +26,11 @@ public class LoginCommand implements Command {
             request.getSession().setAttribute("resPage", "/WEB-INF/login.jsp");
             request.getRequestDispatcher("/WEB-INF/login.jsp").forward(request, response);
         }
-        if(!CommandUtil.checkUserIsLogged(request, name)){
-
-            request.getRequestDispatcher("/WEB-INF/error.jsp").forward(request, response);
-
-        }
+//        if(!CommandUtil.checkUserIsLogged(request, name)){
+//
+//            request.getRequestDispatcher("/WEB-INF/error.jsp").forward(request, response);
+//
+//        }
 
         try {
             user = userService.login(name, pass);

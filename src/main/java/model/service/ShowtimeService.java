@@ -50,4 +50,6 @@ public interface ShowtimeService {
      * @throws ServiceException
      */
     Showtime addShowtime(Showtime Showtime) throws ServiceException, ShowtimeSlotBusyException;
+
+
 }
