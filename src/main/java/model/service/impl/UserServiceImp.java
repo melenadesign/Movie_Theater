@@ -14,12 +14,10 @@ import java.util.regex.Pattern;
 
 public class UserServiceImp implements UserService {
     private static Logger log = Logger.getLogger(UserServiceImp.class);
-<<<<<<< HEAD
+
     private static final String NAME_REGEX = "[0-9a-zA-Z]{4,16}";
-=======
-    private static final String NAME_REGEX = ".+";
->>>>>>> 198bc890ea27f0968c6d42ff167fd3303cbc388f
-    private static final String EMAIL_REGEX = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
+
+    private static final String EMAIL_REGEX = "^[_A-Za-z0-9-]*@[A-Za-z0-9-]+([A-Za-z0-9]+)*([A-Za-z]{2,})$";
     private static final String PASS_REGEX = "[0-9a-zA-Z]{4,16}";
     User user;
     DaoFactory factory = DaoFactory.getInstance();

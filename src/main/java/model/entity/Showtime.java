@@ -103,7 +103,7 @@ public class Builder{
         return this;
     }
 
-    public Builder setS(Time start){
+    public Builder setStartTime(Time start){
         showtime.setStartTime(start);
         return this;
     }
@@ -118,7 +118,7 @@ public class Builder{
         return this;
     }
 
-    public Builder setStatus(Showtime.Show_Status status){
+    public Builder setShowStatus(Showtime.Show_Status status){
         showtime.setShowStatus(status);
         return this;
     }

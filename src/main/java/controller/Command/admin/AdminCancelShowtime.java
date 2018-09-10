@@ -1,6 +1,6 @@
 package controller.Command.admin;
 
-<<<<<<< HEAD
+
 import controller.Command.Command;
 import model.service.ServiceException;
 import model.service.ShowtimeService;

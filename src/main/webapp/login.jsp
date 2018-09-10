@@ -15,7 +15,7 @@
     <div class="container ">
         <div class="row p-3 p-md-5 m-md-3">
           <div class="col-sm-12 col-lg-6 m-auto">
-        <form method="post" action="?command=login" class="form-signin mt">
+        <form method="" action="login.jsp?command=login" class="form-signin mt">
             <h2 class="form-signin-heading"><fmt:message key="login.prompt.login"/></h2>
             <c:if test="${errorMessage}">
                 <h3 class="form-signin"><fmt:message key="login.error.message"/></h3>
@@ -37,6 +37,9 @@
                 <label><fmt:message key="login.not.registered"/></label>
                 <br/>
                 <a class="" href="?command=register"><fmt:message key="login.register"/></a>
+                        <font color="red"><c:if test="${not empty param.errMsg}">
+                            <c:out value="${param.errMsg}" />
+                            </c:if></font>
             </div>
         </form>
     </div>

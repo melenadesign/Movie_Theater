@@ -97,7 +97,7 @@ public class ShowtimeServiceImp implements ShowtimeService {
         info.setTime(Showtime.getStartTime().toString());
         info.setFreeSeatsId(tickets.stream()
                 .filter(ticket -> Ticket.Status.ACTIVE.equals(ticket.getStatus()))
-                .mapToLong(ticket -> ticket.getSeat().getSeatId())
+                .mapToInt(ticket -> ticket.getSeat().getSeatId())
                 .toArray());
 
         return info;
