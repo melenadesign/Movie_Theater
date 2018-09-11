@@ -2,18 +2,85 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0195b0cc-d8f4-4a5c-8150-1da542f8b46f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Command/CommandUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Command/CommandUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Command/GetShowtimesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Command/GetShowtimesCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Command/GetShowtimesInfoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Command/GetShowtimeInfoCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Command/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Command/LoginCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Servlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/service/ShowtimeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/service/ShowtimeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/service/impl/ShowtimeServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/service/impl/ShowtimeServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/resources_uk_UA.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resources_uk_UA.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/error.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/movieTheater.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/movieTheater.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Queries.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Command/Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Command/CommandUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Command/ExceptionCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Command/GetShowtimeInfoCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Command/GetShowtimesCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Command/LoginCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Command/LogoutCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Command/RegisterCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Command/RolePathCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Command/admin/AdminCancelShowtime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Command/admin/AdminMoviesCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Command/admin/AdminNewMovie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Command/admin/AdminNewShowtime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Command/user/UserBuyTicketCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Command/user/UserTicketsCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Servlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/filters/AuthFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/filters/EncodingFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/filters/LocaleFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/listener/SessionListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dao/DaoException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dao/DaoFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dao/EmailExistsException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dao/MovieDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dao/NameExistsException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dao/SeatDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dao/ShowtimeDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dao/TicketDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dao/dto/ShowtimeInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dao/impl/ConnectionPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dao/impl/JDBCDaoFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dao/impl/JDBCMovieDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dao/impl/JDBCSeatDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dao/impl/JDBCShowtimeDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dao/impl/JDBCTicketDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dao/impl/JDBCUserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/entity/Movie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/entity/Seat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/entity/Showtime$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/entity/Showtime$Show_Status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/entity/Showtime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/entity/Ticket$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/entity/Ticket$Status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/entity/Ticket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/entity/User$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/service/ServiceException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/service/ShowtimeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/service/ShowtimeSlotBusyException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/service/TicketService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/service/impl/ShowtimeServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/service/impl/TicketServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/service/impl/UserServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources_en_US.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources_uk_UA.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sql/movieTheater.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/logging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/tomcat-users.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2018-09-11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/cinema/org/apache/jsp/WEB_002dINF/error_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/cinema/org/apache/jsp/WEB_002dINF/error_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/cinema/org/apache/jsp/index_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/cinema/org/apache/jsp/index_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/cinema/org/apache/jsp/layout/footer_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/cinema/org/apache/jsp/layout/footer_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/cinema/org/apache/jsp/layout/header_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/cinema/org/apache/jsp/layout/header_jsp.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -121,7 +188,7 @@
       <file leaf-file-name="ShowtimeServiceImp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/service/impl/ShowtimeServiceImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
+            <state relative-caret-position="3680">
               <caret line="203" column="40" selection-start-line="203" selection-start-column="36" selection-end-line="203" selection-end-column="40" />
             </state>
           </provider>
@@ -130,17 +197,44 @@
       <file leaf-file-name="ShowtimeDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/ShowtimeDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
+            <state relative-caret-position="460">
               <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1301">
+            <state relative-caret-position="1060">
               <caret line="53" column="50" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="movieTheater.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/sql/movieTheater.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="195" column="7" selection-start-line="195" selection-end-line="196" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Servlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/Servlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="80" column="35" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Showtime.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/entity/Showtime.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="110" column="46" lean-forward="true" selection-start-line="110" selection-start-column="46" selection-end-line="110" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -166,36 +260,8 @@
       <file leaf-file-name="ShowtimeService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/service/ShowtimeService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="600">
               <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resources_uk_UA.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/resources_uk_UA.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="40" selection-start-line="40" selection-end-line="40" selection-end-column="10" />
-            </state>
-          </provider>
-          <provider editor-type-id="ResourceBundle" />
-        </entry>
-      </file>
-      <file leaf-file-name="resources_en_US.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/resources_en_US.properties">
-          <provider selected="true" editor-type-id="text-editor" />
-          <provider editor-type-id="ResourceBundle" />
-        </entry>
-      </file>
-      <file leaf-file-name="LoginCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/Command/LoginCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-40">
-              <caret line="28" selection-start-line="28" selection-start-column="2" selection-end-line="32" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -214,10 +280,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SQL Script" />
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="SQL Script" />
       </list>
     </option>
   </component>
@@ -241,9 +307,10 @@
       <find>tic</find>
       <find>InfoJson</find>
       <find>find</find>
+      <find>, &quot;ACTIVE&quot;</find>
+      <find>movie_id</find>
     </findStrings>
     <replaceStrings>
-      <replace>movie</replace>
       <replace>seat</replace>
       <replace>error</replace>
       <replace>findByShowtimeId</replace>
@@ -255,6 +322,8 @@
       <replace>howtime</replace>
       <replace>Showtime</replace>
       <replace>Cancel</replace>
+      <replace>movie</replace>
+      <replace>, &quot;ACTIVE&quot;, 1</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -263,7 +332,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="bdc18bfa-698a-4743-9b8d-59cf6f96d9cb/consoles/Connection" />
         <option value="$PROJECT_DIR$/src/main/webapp/layout/footer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/layout/header.jsp" />
@@ -272,7 +340,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/resources.properties" />
         <option value="$PROJECT_DIR$/src/main/java/controller/Command/RegisterCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/Command/ExceptionCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/sql/movieTheater.sql" />
         <option value="$PROJECT_DIR$/src/main/java/model/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/dao/impl/EmailExistsException.java" />
@@ -314,6 +381,8 @@
         <option value="$PROJECT_DIR$/src/main/java/controller/Command/GetSessionsCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/service/ShowtimeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/service/impl/ShowtimeServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/sql/dump_init.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/sql/movieTheater.sql" />
       </list>
     </option>
   </component>
@@ -335,9 +404,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1359" />
-    <option name="y" value="49" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1687" />
+    <option name="y" value="143" />
     <option name="width" value="1296" />
     <option name="height" value="1000" />
   </component>
@@ -347,6 +416,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -425,6 +496,15 @@
               <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="movieTheater" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Movie_Theater" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="movieTheater" type="b2602c69:ProjectViewProjectNode" />
@@ -517,9 +597,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -733,38 +811,38 @@
     <option name="totallyTimeSpent" value="11309000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1359" y="49" width="1296" height="1000" extended-state="0" />
+    <frame x="1272" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="DB Browser" order="12" visible="true" weight="0.13349515" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.33064517" />
+      <window_info anchor="right" id="DB Browser" order="12" weight="0.23899755" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32997763" />
       <window_info anchor="right" id="Palette&#9;" order="10" />
       <window_info id="Image Layers" order="3" />
-      <window_info anchor="bottom" id="DB Execution Console" order="8" weight="0.32997763" />
+      <window_info anchor="bottom" id="DB Execution Console" order="8" weight="0.31991053" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="11" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32662192" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32718894" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20711975" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15831296" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="6" />
       <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3982103" />
+      <window_info id="Favorites" order="7" side_tool="true" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info anchor="right" id="JSF" order="5" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32997763" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Database" order="6" visible="true" weight="0.05929722" />
-      <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="CDI" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
@@ -829,9 +907,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../StudentEvaluations-master/src/main/java/ua/tania/ann/model/dao/StudentDAO.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../RegistrationFormWeb-master/src/main/java/ua/tania/ann/model/service/RegisteredUserService.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -863,13 +938,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2000">
           <caret line="8" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/movieTheater.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="183" column="28" selection-start-line="183" selection-start-column="28" selection-end-line="183" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -934,24 +1002,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/entity/Showtime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="120" column="32" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="4" column="19" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Servlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="91" column="23" selection-start-line="67" selection-start-column="1" selection-end-line="91" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1104,16 +1158,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/resources_en_US.properties">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/resources_uk_UA.properties">
+      <provider editor-type-id="ResourceBundle" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="40" selection-start-line="40" selection-end-line="40" selection-end-column="10" />
         </state>
       </provider>
-      <provider editor-type-id="ResourceBundle" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/error.jsp">
       <provider selected="true" editor-type-id="text-editor">
@@ -1148,7 +1202,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/service/ShowtimeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="600">
           <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
         </state>
       </provider>
@@ -1169,22 +1223,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/service/impl/ShowtimeServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
+        <state relative-caret-position="3680">
           <caret line="203" column="40" selection-start-line="203" selection-start-column="36" selection-end-line="203" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/ShowtimeDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
+        <state relative-caret-position="460">
           <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1301">
+        <state relative-caret-position="1060">
           <caret line="53" column="50" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/dump_init.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/movieTheater.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="195" column="7" selection-start-line="195" selection-end-line="196" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Servlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="80" column="35" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/entity/Showtime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="110" column="46" lean-forward="true" selection-start-line="110" selection-start-column="46" selection-end-line="110" selection-end-column="46" />
         </state>
       </provider>
     </entry>

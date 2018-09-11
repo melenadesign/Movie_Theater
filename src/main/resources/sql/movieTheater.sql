@@ -77,7 +77,7 @@ CREATE TABLE IF NOT EXISTS `movie_theater`.`showtimes` (
   `date` DATE NOT NULL,
   `start_time` DATETIME NOT NULL,
   `dayTime_show` DATETIME NOT NULL,
-  UNIQUE INDEX `id_UNIQUE` (`movie_id` ASC) VISIBLE,
+--  UNIQUE INDEX `id_UNIQUE` (`movie_id` ASC) VISIBLE,
   PRIMARY KEY (`showtime_id`),
   UNIQUE INDEX `showtime_id_UNIQUE` (`showtime_id` ASC) VISIBLE,
   CONSTRAINT `movie_id`
@@ -182,3 +182,16 @@ ALTER TABLE movie_theater.ticket DROP COLUMN price;
 --UPDATE `movie_theater`.`user`   SET role = '0' WHERE user_id = 3;
 --UPDATE `movie_theater`.`user`   SET role = '1' WHERE user_id = 1;
 ALTER TABLE movie_theater.user CHANGE COLUMN role isAdmin TINYINT;
+
+--ALTER TABLE `movie_theater`.`showtimes` DROP INDEX `movie_id`;
+--ALTER TABLE `movie_theater`.`showtimes` DROP CONSTRAINT movie_id;
+ALTER TABLE `movie_theater`.`showtimes` DROP FOREIGN KEY movie_id;
+ALTER TABLE `movie_theater`.`showtimes` ADD FOREIGN KEY movie_id;
+ALTER TABLE `movie_theater`.`showtimes` DROP COLUMN  movie_id;
+ALTER TABLE `movie_theater`.`showtimes` ADD COLUMN  `movie` INT,
+ALTER TABLE `movie_theater`.`showtimes` ADD COLUMN  movie INT;
+
+ALTER TABLE `movie_theater`.`showtimes` ADD FOREIGN KEY (`movie`) REFERENCES `movie_theater`.`movie`(movie_id);
+SELECT * FROM `movie_theater`.`movie`;
+SELECT * FROM `movie_theater`.`showtimes`;
+UPDATE `movie_theater`.`showtimes` SET `movie`= 1 WHERE `showtime_id` = 1;

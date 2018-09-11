@@ -23,7 +23,11 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="bdc18bfa-698a-4743-9b8d-59cf6f96d9cb">
+        <schema name="movie_theater" object-types="column, function, table, view" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="bdc18bfa-698a-4743-9b8d-59cf6f96d9cb">
@@ -45,6 +49,7 @@ UPDATE user SET user_id='3' WHERE user_id="4"]]></console>
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
     <mapping file-url="file://$PROJECT_DIR$/src/main/resources/sql/movieTheater.sql" connection-id="bdc18bfa-698a-4743-9b8d-59cf6f96d9cb" session-id="MAIN" current-schema="movie_theater" />
+    <mapping file-url="file://$PROJECT_DIR$/src/main/resources/sql/dump_init.sql" connection-id="bdc18bfa-698a-4743-9b8d-59cf6f96d9cb" session-id="MAIN" current-schema="movie_theater" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
@@ -86,7 +91,7 @@ UPDATE user SET user_id='3' WHERE user_id="4"]]></console>
           <password value="cm9vdA==" />
         </database>
         <properties>
-          <auto-commit value="true" />
+          <auto-commit value="false" />
         </properties>
         <ssh-settings>
           <active value="false" />
